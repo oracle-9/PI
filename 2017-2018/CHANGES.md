@@ -1,5 +1,6 @@
 # Changes made from the original exercises
 
+
 ## [EN]
 
 ### - Worksheet 1
@@ -12,6 +13,8 @@
 
 ### - Worksheet 2
 - Every occurence of the type `int` was replaced with `signed int`;
+- Exercises `1` and `2` were renamed from `multInt` to `integer_float_product_v1` and `integer_float_product_v2`, respectively;
+- Exercise `1` return variable was renamed from `r` to `product` (hooray giving your variables *actual, decent* names!);
 - Exercises `3`, `4` and `5` were renamed from `mdc` to `gcd_v1`, `gcd_v2`, (...), depending on the exercise number, and receive and return an `unsigned int` instead of an `int`, because the greatest common divsor in negative numbers is the same as in positive ones;
 - Exercises `6 a)` and `6 b)` were renamed from `fib` to `fib_recursive_v1` and `fib_iterative`, respectively;
 - An alternative, faster recursive fibonacci definition `fib_recursive_v2` was added.
@@ -20,6 +23,7 @@
 ## [PT]
 
 ### - Ficha 1
+- Os exercícios `1.1` a `1.5` e `2.1 a)` a `2.1 e)` foram isolados em funções específicas;
 - A função `f` (exercício `2.1 f)`) foi renomeada para `ex2_1_f`, e a sua respetiva função `main` foi renomeada para `ex2_1_f_main`;
 - As funções dos exercícios `1.1` a `2.1 f)` foram (excessivamente) comentadas para fornecer uma descrição mais detalhada;
 - Os exercícios `2` e `3` usam a função `fputc` do `stdio` em vez de `putchar`;
@@ -29,7 +33,7 @@
 ### - Ficha 2
 - Todas as ocurrências do tipo `int` foram substituídas por `signed int`;
 - Os exercícios `1` e `2` foram renomeados de `multInt` para `integer_float_product_v1` e `integer_float_product_v2`, respetivamente;
-- A variável de retorno no exercício `1` foi renomeada de `r` para `product` (hooray dar nomes decentes a variáveis!);
+- A variável de retorno no exercício `1` foi renomeada de `r` para `product` (hooray dar nomes *decentes* a variáveis!);
 - Os exercícios `3`, `4` e `5` foram renomeados de `mdc` para `gcd_v1`, `gcd_v2`, (...), dependendo do número do exercício, e recebem e retornam um `unsigned int` em vez de um `int`, porque o maior divisor comum em números negativos é o mesmo que em positivos;
 - Os exercícios `6 a)` e `6 b)` foram renomeados de `fib` para `fib_recursive_v1` e `fib_iterative`, respetivamente;
 - Foi adicionada uma definição recursiva e mais rápida alternativa `fib_recursive_v2`.
