@@ -37,6 +37,26 @@
 - Alternatives to exercises `6` and `7` were added, where the array is passed as an argument and filled, instead of allocated, as the worksheet originally requested;
 - Exercises `6` and `7` function call examples were provided, for each exercise's version.
 
+### - Worksheet 4
+- Every occurence of the type `int` was replaced with `signed int` (except for the return value of `string`'s `strcmp`);
+- Exercise `1` was renamed from `minusculas` to `str_tolower_v1`;
+- Exercise `1` was returns the resulting string, instead of the number of upper case letters in the string, which is now optionally stored in a pointer;
+- Added alternatives `str_tolower_v2` and `count_lines_v2` to exercises `1` and `2` respectively, which do the exact same but with a slightly different syntax;
+- Exercises `2` and `3` were renamed from `contalinhas` and `contaPal` to `count_lines_v1` and `count_words_v1` respectively;
+- Exercises `2` and `3` return a `size_t` instead of an `int`, and a `const` qualifier was added to the `char*` argument of both exercises;
+- Added an alternative algorithm `count_words_v2` to exercise `3`;
+- Added `const` qualifiers to the arguments of type `char*` and `char**` of the exercises `4` to `6`;
+- Exercises `4` to `6` return a pointer to the needle string if found, or `NULL` otherwise, instead of the needle's index in the haystack;
+- Exercises `4` to `6` array size argument type was changed from `int` to `size_t`;
+- Exercise `4` was renamed from `procura` to `search_str`;
+- Exercise `5` was renamed from `procura` to `search_str_ord_v1`. and an alternative `search_str_ord_v2` was added;
+- Exercise `5` was renamed from `procura` to `bin_search_str_recursive` and `bin_search_str_iterative`, depending on the version;
+- Exercise `7` was renamed from `zeros` to `count_zeros`, and its array size argument and return type were changed from `int` to `size_t`;
+- Exercises `8` and `9` return an allocated matrix and array respectively, instead of filling one, and as such do not receive any matrix or array to fill;
+- Exercises `8` and `9` array and matrix size argument type was changed from `int` to `size_t`;
+- Alternatives to exercises `8` and `9` were added, where the array is passed as an argument and filled, instead of allocated, as the worksheet originally requested;
+- Exercise `8` function call examples were provided, for each version.
+
 
 ## [PT]
 
