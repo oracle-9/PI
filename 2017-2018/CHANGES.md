@@ -107,7 +107,7 @@
 - O tipo da variável que guarda o tamanho dos arrays nos exercícios `4` a `6` foi alterado de `int` para `size_t`;
 - O exercício `4` foi renomeado de `procura` para `search_str`;
 - O exercício `5` foi renomeado de `procura` para `search_str_ord_v1`, e uma função alternativa `search_str_ord_v2` foi adicionada;
-- O exercício `6` foi renomeado de `procura` para `bin_search_str_recursive` and `bin_search_str_iterative`, dependendo da versão;
+- O exercício `6` foi renomeado de `procura` para `bin_search_str_recursive` e `bin_search_str_iterative`, dependendo da versão;
 - O exercício `7` foi renomeado de `zeros` para `count_zeros`, e o tipo da variável que guarda o tamanho do array que lhe é passado e o seu tipo de retorno foram alterados de `int` para `size_t`;
 - Os exercícios `8` e `9` retornam uma matriz e um array alocados respetivamente, em vez de preencherem um, e portanto não recebem qualquer matriz ou array para preencher;
 - O tipo da variável que guarda o tamanho da matriz e do array passados como argumentos aos exercícios `8` e `9` foi alterado de `int` para `size_t`;
