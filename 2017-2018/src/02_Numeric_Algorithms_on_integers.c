@@ -28,7 +28,7 @@ float integer_float_product_v2(signed int n, float m) {
 
     for ( ; n; m *= 2, n /= 2) {
         if (n % 2 == 0) {
-            product += ( (n > 0) ? (m) : (-m) );
+            product += ((n > 0) ? m : -m);
         }
     }
 
@@ -36,7 +36,12 @@ float integer_float_product_v2(signed int n, float m) {
 }
 
 /* Exercise 3 */
-#define MIN(x, y) ( ((x) < (y)) ? (x) : (y) )
+#define MIN(a, b)                                      \
+    __extension__({                                    \
+        __typeof__(a) __MIN_a__ = (a);                 \
+        __typeof__(b) __MIN_b__ = (b);                 \
+        __MIN_a__ < __MIN_b__ ? __MIN_a__ : __MIN_b__; \
+    })
 
 unsigned int gcd_v1(unsigned int a, unsigned int b) {
     unsigned int gcd = MIN(a, b);
@@ -51,8 +56,8 @@ unsigned int gcd_v1(unsigned int a, unsigned int b) {
 /* Exercise 4 */
 unsigned int gcd_v2(unsigned int a, unsigned int b) {
     while (a && b) {
-        ((a > b) ? (a -= b)
-                 : (b -= a));
+        (a > b) ? (a -= b)
+                : (b -= a);
     }
     return a + b;
 }
@@ -69,15 +74,15 @@ unsigned int gcd_v3(unsigned int a, unsigned int b) {
 
 /* Exericse 6 a) */
 unsigned long long int fib_recursive_v1(unsigned int n) {
-    return ((0 == n || 1 == n)
-        ? (n)
-        : (fib_recursive_v1(n - 1) + fib_recursive_v1(n - 2)));
+    return (0 == n || 1 == n)
+        ? n
+        : (fib_recursive_v1(n - 1) + fib_recursive_v1(n - 2));
 }
 
 static unsigned long long int fib_recursive_v2_acc_lambda(
     unsigned int n, unsigned long long int f0, unsigned long long int f1) {
-    return ((0 == n) ? (f0)
-                     : (fib_recursive_v2_acc_lambda(n - 1, f1, f0 + f1)));
+    return (0 == n) ? f0
+                    : fib_recursive_v2_acc_lambda(n - 1, f1, f0 + f1);
 }
 
 unsigned long long int fib_recursive_v2(unsigned int n) {
