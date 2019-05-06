@@ -88,7 +88,7 @@
 - O tipo da variável que guarda o tamanho dos arrays nos exercícios `4` a `6` foi alterado de `int` para `size_t`, porque tamanhos de array negativos não fazem sentido;
 - O exercício `4` foi renomeado de `soma` para `integer_sum_v1`, e retorna um `signed long long int` em vez de um `int` para prevenir *integer overflow*;
 - Alternativas ao exercício `4` `integer_sum_v2` e `integer_sum_v3` foram adicionadas;
-- O exercício `5` foi renomeado de `maximum` para `integer_maximum`, e retorna o máximo do array, em vez de um valor *0 = funcionou corretamente, caso contrário falhou*. Não recebe um pointer para guardar o máximo, e assume que o array é valido, isto é, que o seu tamanho é positivo.
+- O exercício `5` foi renomeado de `maximum` para `integer_maximum`, e retorna o máximo do array, em vez de um valor *0 = funcionou corretamente, caso contrário falhou*. Não recebe um apontador para guardar o máximo, e assume que o array é valido, isto é, que o seu tamanho é positivo.
 - Os exercícios `6` e `7` retornam um array alocado em vez de preencherem um, e portanto apenas recebem o tamanho do array desejado como argumento, que agora é do tipo `size_t` em vez de `int`;
 - Os arrays dos exercícios `6` e `7` são agora do tipo `unsigned long long int` em vez de `int` para prevenir *integer overflow*;
 - Foram criadas alternativas aos exercícios `6` e `7`, onde o array é passado por argumento e preenchido, em vez de alocado, como o enunciado originalmente pedia;
@@ -97,13 +97,13 @@
 ### - Ficha 4
 - Todas as ocurrências do tipo `int` foram substituídas por `signed int` (exceto no valor de retorno da função `strcmp` do `string`);
 - O exercício `1` foi renomeado de `minusculas` para `str_tolower_v1`;
-- O exercício `1` retorna a string resultante, em vez de o número de letras maiúsculas na string, que agora é opcionalmente guardado num pointer;
+- O exercício `1` retorna a string resultante, em vez de o número de letras maiúsculas na string, que agora é opcionalmente guardado num apontador;
 - Foram adicionadas as alternativas `str_tolower_v2` e `count_lines_v2` aos exercícios `1` e `2` respetivamente, que fazem exatamente o mesmo mas com uma sintaxe ligeiramente diferente;
 - Os exercícios `2` e `3` foram renomeados de `contalinhas` e `contaPal` para `count_lines_v1` e `count_words_v1` respetivamente;
 - Os exercícios `2` e `3` retornam um `size_t` em vez de um `int`, e o qualificador `const` foi adicionado ao argumento do tipo `char*` dos dois exercícios;
 - Foi adicionado um algoritmo alternativo `count_words_v2` ao exercício `3`;
 - Foram adicionados qualificadores `const` aos argumentos do tipo `char*` e `char**` dos exercícios `4` a `6`;
-- Os exercícios `4` a `6` retornam um pointer para a string agulha se esta for encontrada, ou `NULL` caso contrário, em vez do possível índice da agulha no palheiro;
+- Os exercícios `4` a `6` retornam um apontador para a string agulha se esta for encontrada, ou `NULL` caso contrário, em vez do possível índice da agulha no palheiro;
 - O tipo da variável que guarda o tamanho dos arrays nos exercícios `4` a `6` foi alterado de `int` para `size_t`;
 - O exercício `4` foi renomeado de `procura` para `search_str`;
 - O exercício `5` foi renomeado de `procura` para `search_str_ord_v1`, e uma função alternativa `search_str_ord_v2` foi adicionada;
