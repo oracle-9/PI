@@ -36,4 +36,4 @@
 - A variável de retorno no exercício `1` foi renomeada de `r` para `product` (hooray dar nomes *decentes* a variáveis!);
 - Os exercícios `3`, `4` e `5` foram renomeados de `mdc` para `gcd_v1`, `gcd_v2`, (...), dependendo do número do exercício, e recebem e retornam um `unsigned int` em vez de um `int`, porque o maior divisor comum em números negativos é o mesmo que em positivos;
 - Os exercícios `6 a)` e `6 b)` foram renomeados de `fib` para `fib_recursive_v1` e `fib_iterative`, respetivamente;
-- Foi adicionada uma definição recursiva e mais rápida alternativa `fib_recursive_v2`.
+- Foi adicionada uma definição recursiva mais rápida alternativa `fib_recursive_v2`.
