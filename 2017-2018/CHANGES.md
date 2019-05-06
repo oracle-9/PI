@@ -63,7 +63,7 @@
 - O exercício `1 b)` foi renomeado de `main` para `ex1_b`, e recebe 0 argumentos `(void)`, em vez de um número não especificado de argumentos `()`;
 - O exercício `2` foi renomeado de `swapM` para `swap_signed_int`;
 - O exercício `3` foi renomeado de `swap` para `swap_signed_int_elem_v1`;
-- Foram adicionadas deiversas alternatives (`swap_signed_int_elem_v2`, (...)) à função `swap_signed_int_elem_v1`, assim como uma macro genérica de swap;
+- Foram adicionadas diversas alternatives (`swap_signed_int_elem_v2`, (...)) à função `swap_signed_int_elem_v1`, assim como uma macro genérica de swap;
 - O qualificador `const` foi adicionado ao array passado como argumento aos exercícios `4` e `5`, porque o array não é modificado por estas funções (ver [const correctness](https://isocpp.org/wiki/faq/const-correctness));
 - O tipo da variável que guarda o tamanho dos arrays dos exercícios `4` a `6` foi alterado de `int` para `size_t`, porque tamanhos de array negativos não fazem sentido;
 - O exercício `4` foi renomeado de `soma` para `integer_sum_v1`, e retorna um `signed long long int` em vez de um `int` para prevenir *integer overflow*;
