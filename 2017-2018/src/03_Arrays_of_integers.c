@@ -83,13 +83,8 @@ int ex1_b(void) {
 }
 
 /* Exercise 2 */
-void swap_signed_int(signed int *left, signed int *right) {
-    const signed int tmp = *left;
-    *left  = *right;
-    *right = tmp;
-}
 
-/* Exercise 3 */
+/* May evaluate left and right more than once */
 #define SWAP(T, left, right)                 \
     do {                                     \
         const T __SWAP_tmp__ = left;         \
@@ -97,6 +92,13 @@ void swap_signed_int(signed int *left, signed int *right) {
         right                = __SWAP_tmp__; \
     } while (0)
 
+void swap_signed_int(signed int *left, signed int *right) {
+    const signed int tmp = *left;
+    *left  = *right;
+    *right = tmp;
+}
+
+/* Exercise 3 */
 void swap_signed_int_elem_v1(signed int a[], signed int i, signed int j) {
     swap_signed_int(a + i, a + j);
 }
