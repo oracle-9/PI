@@ -5,7 +5,7 @@
 University of Minho Imperative Programming solved worksheets and tests.<br/>
 
 __Several changes were made to the original exercises.<br/>
-Check each `CHANGES.md` in the year's respective directory to see which.__
+Check each year's directory `CHANGES.md` to see which.__
 
 ---
 
